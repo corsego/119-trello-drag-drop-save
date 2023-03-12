@@ -9,7 +9,7 @@ class TasksController < ApplicationController
   def sort
     # debugger
     @task = Task.find(params[:id])
-    @task.update(row_order_position: params[:row_order_position])
+    @task.update(row_order_position: params[:row_order_position], list_id: params[:list_id])
     head :no_content
   end
 
