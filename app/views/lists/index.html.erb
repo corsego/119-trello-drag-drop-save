@@ -5,7 +5,7 @@
 <div id="lists">
   <ul data-controller="sortable">
     <% @lists.each do |list| %>
-      <li>
+      <li data-sortable-id="<%= list.id %>">
         <%= render list %>
       </li>
     <% end %>

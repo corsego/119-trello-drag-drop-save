@@ -3,7 +3,14 @@ class ListsController < ApplicationController
 
   # GET /lists or /lists.json
   def index
-    @lists = List.all
+    @lists = List.rank(:row_order)
+  end
+
+  def sort
+    @list = List.find(params[:id])
+    @list.update(row_order_position: params[:row_order_position])
+    head :no_content
+    # debugger
   end
 
   # GET /lists/1 or /lists/1.json

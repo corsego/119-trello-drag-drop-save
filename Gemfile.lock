@@ -162,10 +162,14 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
+    ranked-model (0.4.8)
+      activerecord (>= 4.2)
     redis (4.8.1)
     regexp_parser (2.7.0)
     reline (0.3.2)
       io-console (~> 0.5)
+    requestjs-rails (0.0.10)
+      rails (>= 6.0.0)
     rexml (3.2.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.8.1)
@@ -218,7 +222,9 @@ DEPENDENCIES
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.2)
+  ranked-model (~> 0.4.8)
   redis (~> 4.0)
+  requestjs-rails (~> 0.0.10)
   selenium-webdriver
   sprockets-rails
   stimulus-rails
