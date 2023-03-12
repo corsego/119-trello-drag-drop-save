@@ -6,6 +6,13 @@ class TasksController < ApplicationController
     @tasks = Task.all
   end
 
+  def sort
+    # debugger
+    @task = Task.find(params[:id])
+    @task.update(row_order_position: params[:row_order_position])
+    head :no_content
+  end
+
   # GET /tasks/1 or /tasks/1.json
   def show
   end

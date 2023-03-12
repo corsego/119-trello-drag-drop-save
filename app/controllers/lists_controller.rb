@@ -10,7 +10,6 @@ class ListsController < ApplicationController
     @list = List.find(params[:id])
     @list.update(row_order_position: params[:row_order_position])
     head :no_content
-    # debugger
   end
 
   # GET /lists/1 or /lists/1.json

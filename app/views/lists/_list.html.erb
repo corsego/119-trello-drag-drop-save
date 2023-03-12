@@ -8,9 +8,9 @@
 
 </div>
 
-<ul>
+<ul data-controller="sortable">
   <% list.tasks.rank(:row_order).each do |task| %>
-    <li>
+    <li data-sortable-update-url="<%= sort_task_path(task) %>">
       <%= render task %>
     </li>
   <% end %>
