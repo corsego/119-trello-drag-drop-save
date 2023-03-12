@@ -3,11 +3,11 @@
 <h1>Lists</h1>
 
 <div id="lists">
-  <ul>
-  <% @lists.each do |list| %>
-    <li>
-      <%= render list %>
-    </li>
-  <% end %>
+  <ul data-controller="sortable">
+    <% @lists.each do |list| %>
+      <li>
+        <%= render list %>
+      </li>
+    <% end %>
   </ul>
 </div>
