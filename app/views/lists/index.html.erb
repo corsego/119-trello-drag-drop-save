@@ -3,9 +3,9 @@
 <h1>Lists</h1>
 
 <div id="lists">
-  <ul data-controller="sortable">
+  <ul data-controller="sortable" style="display: flex;">
     <% @lists.each do |list| %>
-      <li data-sortable-update-url="<%= sort_list_path(list) %>">
+      <li data-sortable-update-url="<%= sort_list_path(list) %>" style="width: 400px; border:solid">
         <%= render list %>
       </li>
     <% end %>
